@@ -1,0 +1,98 @@
+import { useState } from "react";
+
+import Logo from "./Logo.jsx";
+import { AlignLeftIcon, AlignRightIcon, ArrowRight, X } from "lucide-react";
+import ThemeToggleBtn from "./ThemeToggleBtn.jsx";
+
+const Navbar = ({ theme, setTheme }) => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  return (
+    <div className="flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70">
+      <div className="">
+        {theme === "dark" ? (
+          <Logo
+            className="text-white  italic"
+            spanDesign="group-hover:text-white !font-extrabold  "
+          />
+        ) : (
+          <Logo
+            className="text-emerald-950  italic"
+            spanDesign="group-hover:text-[#063c28] !font-extrabold  "
+          />
+        )}
+      </div>
+
+      <div
+        className={`text-gray-700 dark:text-white sm:text-sm 
+      ${
+        !sidebarOpen
+          ? "max-sm:w-0 overflow-hidden"
+          : "max-sm:w-60 max-sm:pl-10 "
+      }
+      max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-[#5044e5] max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all whitespace-nowrap`}
+      >
+        <X
+          className="w-5 absolute right-4 top-4 sm:hidden"
+          onClick={() => setSidebarOpen(false)}
+        />
+        <a
+          onClick={() => setSidebarOpen(false)}
+          href="#"
+          className="sm:hover:border-b"
+        >
+          Home
+        </a>
+
+        <a
+          onClick={() => setSidebarOpen(false)}
+          href="#service"
+          className="sm:hover:border-b"
+        >
+          Service
+        </a>
+        <a
+          onClick={() => setSidebarOpen(false)}
+          href="#our-work"
+          className="sm:hover:border-b"
+        >
+          Our Work
+        </a>
+        <a
+          onClick={() => setSidebarOpen(false)}
+          href="#contact-us"
+          className="sm:hover:border-b"
+        >
+          Contact Us
+        </a>
+      </div>
+
+      <div className="">
+        <div className="flex items-center gap-2 sm:gap-4 xl:ml-2">
+          <ThemeToggleBtn theme={theme} setTheme={setTheme} />
+          {theme === "dark" ? (
+            <AlignLeftIcon
+              className="text-white sm:hidden "
+              fill="white"
+              onClick={() => setSidebarOpen(true)}
+            />
+          ) : (
+            <AlignRightIcon
+              className="text-black sm:hidden "
+              fill="black"
+              onClick={() => setSidebarOpen(true)}
+            />
+          )}
+
+          <a
+            href="#contact-us"
+            className="text-sm max-sm:hidden flex items-center gap-2 bg-[#5044e5] text-white px-6 py-2 rounded-full cursor-pointer hover:scale-105 transition-all"
+          >
+            Connect <ArrowRight />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import Navbar from "./components/Navbar";
 
 const App = () => {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
   return (
-    <div>
-      <h1 className="text-6xl font-bold underline">Hello worldff!</h1>
+    <div className="dark:bg-black relative">
+      <Navbar theme={theme} setTheme={setTheme} />
     </div>
   );
 };
