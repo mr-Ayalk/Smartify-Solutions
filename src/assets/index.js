@@ -33,18 +33,12 @@ import logo8ee from "../../public/logo.png";
 import logo9r from "../../public/logo.png";
 import logoob from "../../public/logo.png";
 
-export const company_Logos = [
-  logo,
-  arrow_icon,
-  group_profile,
-  bgImage1,
-  bgImage2,
-  hero_img,
-];
+import aaupng from "./aau.png";
+export const company_Logos = [aaupng, aaupng, aaupng, aaupng, aaupng, aaupng];
 
 const assets = {
   microsoftImage1,
- logodark,
+  logodark,
   logo2,
   logo3,
   logo4,
