@@ -5,25 +5,25 @@ import Title from "./Title";
 import ServiceCard from "./ServiceCard";
 const serviceData = [
   {
-    title: "Advertising",
+    title: "Website Development",
     description:
       "We turn bold ideas into powerful  digital solutions that connect ,engage...",
     icon: "./logo.png",
   },
   {
-    title: "Advertising",
+    title: "Mobile Application Development",
     description:
       "We turn bold ideas into powerful  digital solutions that connect ,engage...",
     icon: "./logo.png",
   },
   {
-    title: "Advertising",
+    title: "Software Iot integration",
     description:
       "We turn bold ideas into powerful  digital solutions that connect ,engage...",
     icon: "./logo.png",
   },
   {
-    title: "Advertising",
+    title: "Software Maintainace",
     description:
       "We turn bold ideas into powerful  digital solutions that connect ,engage...",
     icon: "./logo.png",
@@ -32,11 +32,10 @@ const serviceData = [
 const Services = () => {
   return (
     <motion.div
-     initial="hidden"
-        whileInView="visible"
-        transition={{ straggerChildren:0.2 }}
-        viewport={{ once: true }}
-
+      initial="hidden"
+      whileInView="visible"
+      transition={{ straggerChildren: 0.2 }}
+      viewport={{ once: true }}
       id="services"
       className="relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white"
     >
