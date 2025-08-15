@@ -1,26 +1,28 @@
 import React from "react";
 import Title from "./Title";
 import smartHomeauto from "../assets/smarthomeauto.webp";
+import smarthealthcare from "../assets/smarthealthcare.png";
+import smartAgriculture from "../assets/iotfarming.png";
 import { motion } from "motion/react";
 const OurWork = () => {
   const workData = [
     {
-      title: "Smart Home Automation",
+      title: "Smart Home & Energy Automation",
       description:
         "we turn bold ideas into powerful digital solutions that connect,engage...",
       image: smartHomeauto,
     },
     {
-      title: "Smart Home Automation",
+      title: "Smart HealthCare",
       description:
         "we turn bold ideas into powerful digital solutions that connect,engage...",
-      image: smartHomeauto,
+      image: smarthealthcare,
     },
     {
-      title: "Smart Home Automation",
+      title: "Smart Agriculture Automation",
       description:
         "we turn bold ideas into powerful digital solutions that connect,engage...",
-      image: smartHomeauto,
+      image: smartAgriculture,
     },
   ];
 
