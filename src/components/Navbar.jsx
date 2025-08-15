@@ -3,6 +3,9 @@ import Logo from "./Logo.jsx";
 import { AlignLeftIcon, AlignRightIcon, ArrowRight, X } from "lucide-react";
 import ThemeToggleBtn from "./ThemeToggleBtn.jsx";
 import { motion } from "motion/react";
+
+
+
 const Navbar = ({ theme, setTheme }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (

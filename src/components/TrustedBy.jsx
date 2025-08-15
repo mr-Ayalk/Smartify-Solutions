@@ -1,6 +1,6 @@
 import microfoft from "../assets/microsoft_logo.png";
 import google from "../assets/google_logo.svg";
-const company_Logos = [microfoft, google, google, google, microfoft, microfoft];
+const company_Logos = [microfoft, google, microfoft, google, microfoft, google];
 import { motion } from "motion/react";
 const TrustedBy = () => {
   return (

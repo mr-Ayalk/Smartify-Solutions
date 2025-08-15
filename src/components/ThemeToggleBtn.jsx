@@ -23,7 +23,7 @@ const ThemeToggleBtn = ({ theme, setTheme }) => {
         {theme === "dark" ? (
           <Sun
             onClick={() => setTheme("light")}
-            className="size-8 p-1.5 border border-gray-500 rounded-full text-white"
+            className="size-8 p-1.5 border border-gray-500 rounded-full bg-white"
           />
         ) : (
           <Moon
