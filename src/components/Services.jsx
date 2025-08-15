@@ -1,5 +1,5 @@
 import { Laptop } from "lucide-react";
-
+import { motion } from "motion/react";
 import herobanner from "../assets/bgImage2.png";
 import Title from "./Title";
 import ServiceCard from "./ServiceCard";
