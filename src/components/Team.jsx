@@ -3,13 +3,13 @@ import { motion } from "motion/react";
 import userImage from "../assets/user.png";
 const teamData = [
   {
-    name: "Ayalkbet Teketel",
+    name: "Basliel T",
     title: "CEO & Founder",
     image: "./logo.png",
   },
   {
     name: "John M",
-    title: "CEO & Founder",
+    title: "Co Founder",
     image: userImage,
   },
   {

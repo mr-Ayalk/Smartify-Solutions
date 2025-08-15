@@ -100,7 +100,7 @@ const Navbar = ({ theme, setTheme }) => {
             href="#contact-us"
             className="text-sm max-sm:hidden flex items-center gap-2 bg-[#5044e5] text-white px-6 py-2 rounded-full cursor-pointer hover:scale-105 transition-all"
           >
-            Connect <ArrowRight />
+            Reach Us
           </a>
         </div>
       </div>
