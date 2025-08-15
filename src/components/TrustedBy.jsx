@@ -1,5 +1,5 @@
-import React from "react";
-import { company_Logos } from "../assets/index";
+import aaupng from "../assets/aau.png";
+const company_Logos = [aaupng, aaupng, aaupng, aaupng, aaupng, aaupng];
 const TrustedBy = () => {
   return (
     <div className="flex flex-col items-center px-4 sm:px-12 lg:px-24 xl:px-40 gap-10 text-gray-700 dark:text-white/80">

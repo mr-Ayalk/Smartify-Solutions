@@ -45,7 +45,7 @@ const Navbar = ({ theme, setTheme }) => {
 
         <a
           onClick={() => setSidebarOpen(false)}
-          href="#service"
+          href="#services"
           className="sm:hover:border-b"
         >
           Service
