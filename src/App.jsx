@@ -5,6 +5,7 @@ import TrustedBy from "./components/TrustedBy";
 import Services from "./components/Services";
 import OurWork from "./components/OurWork";
 import Team from "./components/Team";
+import ContactUs from "./components/ContactUs";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -18,6 +19,7 @@ const App = () => {
       <Services />
       <OurWork />
       <Team />
+      <ContactUs />
     </div>
   );
 };
