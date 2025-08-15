@@ -1,5 +1,6 @@
 import Title from "./Title";
 import { motion } from "motion/react";
+import userImage from "../assets/user.png";
 const teamData = [
   {
     name: "Ayalkbet Teketel",
@@ -7,39 +8,39 @@ const teamData = [
     image: "./logo.png",
   },
   {
-    name: "Ayalkbet Teketel",
+    name: "John M",
     title: "CEO & Founder",
-    image: "./logo.png",
+    image: userImage,
   },
   {
-    name: "Ayalkbet Teketel",
-    title: "CEO & Founder",
-    image: "./logo.png",
+    name: "Dawit B",
+    title: "Co Founder",
+    image: userImage,
   },
   {
-    name: "Ayalkbet Teketel",
-    title: "CEO & Founder",
-    image: "./logo.png",
+    name: "Abrhame T",
+    title: "Fullstack Dev",
+    image: userImage,
   },
   {
-    name: "Ayalkbet Teketel",
-    title: "CEO & Founder",
-    image: "./logo.png",
+    name: "Helen T",
+    title: "UX/UI engineer",
+    image: userImage,
   },
   {
-    name: "Ayalkbet Teketel",
-    title: "CEO & Founder",
-    image: "./logo.png",
+    name: "Senna W",
+    title: "Frontend Developer",
+    image: userImage,
   },
   {
-    name: "Ayalkbet Teketel",
-    title: "CEO & Founder",
-    image: "./logo.png",
+    name: "Temesgen T",
+    title: "IOT engineer",
+    image: userImage,
   },
   {
-    name: "Ayalkbet Teketel",
-    title: "CEO & Founder",
-    image: "./logo.png",
+    name: "Beti H",
+    title: "Iot Engineer",
+    image: userImage,
   },
 ];
 
