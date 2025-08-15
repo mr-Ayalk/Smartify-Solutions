@@ -1,8 +1,33 @@
-import React from "react";
 import Title from "./Title";
 import { ArrowRight, Mail, User } from "lucide-react";
+import toast from "react-hot-toast";
 
 const ContactUs = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "7b4ff9d1-046c-49d8-83e3-89cfbe37f63e");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success("Thanks you for your submission!");
+        event.target.reset();
+      } else {
+        toast.error(data.message);
+      }
+    } catch (error) {
+      toast.error(error.message);
+    }
+  };
   return (
     <div
       id="contact-us"
@@ -14,7 +39,10 @@ const ContactUs = () => {
           "From strategy to execution ,we craft digital solutions that your business forward"
         }
       />
-      <form className="grid sm:grid-cols-2 gap-3 sm:gap-5 max-w-2xl w-full">
+      <form
+        onSubmit={onSubmit}
+        className="grid sm:grid-cols-2 gap-3 sm:gap-5 max-w-2xl w-full"
+      >
         <div className="">
           <p className="mb-2 text-sm font-medium">Your name</p>
           <div className="flex pl-3 rounded-lg border border-gray-300 dark:border-gray-600">
@@ -25,6 +53,7 @@ const ContactUs = () => {
               placeholder="Enter your name"
               className="p-3 text-sm outline-none"
               required
+              name="name"
             />
           </div>
         </div>
@@ -36,6 +65,7 @@ const ContactUs = () => {
               type="text"
               placeholder="Enter your email"
               className="p-3 text-sm outline-none"
+              name="email"
             />
           </div>
         </div>
@@ -45,6 +75,8 @@ const ContactUs = () => {
             rows={8}
             placeholder="Enter your message"
             className="w-full p-3 text-sm outline-none rounded-lg border border-gray-300 dark:border-gray-600"
+            name="message"
+            required
           />
         </div>
         <button
