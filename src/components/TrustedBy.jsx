@@ -1,5 +1,6 @@
-import aaupng from "../assets/aau.png";
-const company_Logos = [aaupng, aaupng, aaupng, aaupng, aaupng, aaupng];
+import microfoft from "../assets/microsoft_logo.png";
+import google from "../assets/google_logo.svg";
+const company_Logos = [microfoft, google, google, google, microfoft, microfoft];
 import { motion } from "motion/react";
 const TrustedBy = () => {
   return (
@@ -22,21 +23,23 @@ const TrustedBy = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        transition={{ straggerChildren:0.1 }}
+        transition={{ straggerChildren: 0.1 }}
         viewport={{ once: true }}
         className="flex items-center justify-center flex-wrap gap-10 m-4"
       >
         {company_Logos.map((logo, i) => (
           <motion.img
-          variants={{
-            hidden:{
-              opacity:0,y:10
-            },
-            visible:{
-              opacity:1,y:0
-            }
-          }}
-          transition={{duration:0.4}}
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: 10,
+              },
+              visible: {
+                opacity: 1,
+                y: 0,
+              },
+            }}
+            transition={{ duration: 0.4 }}
             src={logo}
             key={i}
             className="max-h-5 sm:max-h-6 dark:drop-shadow-xl"
