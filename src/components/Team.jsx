@@ -1,45 +1,43 @@
 import Title from "./Title";
 import { motion } from "motion/react";
 import userImage from "../assets/user.png";
+import lemi from "../assets/lemi.png";
+import ayalk from "../assets/ayalk.jpg";
+import bami from "../assets/bami.png";
 const teamData = [
   {
-    name: "Basliel T",
-    title: "CEO & Founder",
-    image: "./logo.png",
+    name: "Lemi Negeso",
+    title: "Co Founder | HardWare Engineer | AI and Ml Specialist",
+    image: lemi,
   },
   {
-    name: "John M",
-    title: "Co Founder",
+    name: "Ayalkbet Teketel",
+    title: "Co Founder | Full Stack Developer | IoT Specialist",
+    image: ayalk,
+  },
+  {
+    name: "Bamlak Tadesse",
+    title: "Co Founder | UX/UI Designer | IoT Specialist",
+    image: bami,
+  },
+  {
+    name: "Eyosiyas Tiruneh",
+    title: "Co Founder | HardWare Engineer | Project Organizer",
     image: userImage,
   },
   {
-    name: "Dawit B",
-    title: "Co Founder",
+    name: "Kenna Bayye",
+    title: "Co Founder |HardWare Engineer | IoT Specialist",
     image: userImage,
   },
   {
-    name: "Abrhame T",
-    title: "Fullstack Dev",
+    name: "Oli Dereje",
+    title: "Software Developer",
     image: userImage,
   },
   {
-    name: "Helen T",
-    title: "UX/UI engineer",
-    image: userImage,
-  },
-  {
-    name: "Senna W",
-    title: "Frontend Developer",
-    image: userImage,
-  },
-  {
-    name: "Temesgen T",
-    title: "IOT engineer",
-    image: userImage,
-  },
-  {
-    name: "Beti H",
-    title: "Iot Engineer",
+    name: "Feven ",
+    title: "Software Developer",
     image: userImage,
   },
 ];
