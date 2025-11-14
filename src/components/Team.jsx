@@ -37,7 +37,7 @@ const teamData = [
     image: userImage,
   },
   {
-    name: "Feven ",
+    name: "Feven Getachew ",
     title: "Software Engineer",
     image: userImage,
   },
