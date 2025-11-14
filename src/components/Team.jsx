@@ -8,37 +8,37 @@ import eyosi from "../assets/eyosi.png";
 const teamData = [
   {
     name: "Lemi Negeso",
-    title: "Co Founder | HardWare Engineer | AI and Ml Specialist",
+    title: "Co Founder | HardWare & IoT  Engineer | AI and Ml Specialist",
     image: lemi,
   },
   {
     name: "Ayalkbet Teketel",
-    title: "Co Founder | Full Stack Developer | IoT Specialist",
+    title: "Co Founder | Software Developer | HardWare & IoT Engineer ",
     image: ayalk,
   },
   {
     name: "Bamlak Tadesse",
-    title: "Co Founder | UX/UI Designer | IoT Specialist",
+    title: "Co Founder | Team Representative | IoT Specialist ",
     image: bami,
   },
   {
     name: "Eyosiyas Tiruneh",
-    title: "Co Founder | HardWare Engineer | Project Organizer",
+    title: "Co Founder | HardWare & IoT  Engineer | Project Manager",
     image: eyosi,
   },
   {
     name: "Kenna Bayye",
-    title: "Co Founder |HardWare Engineer | IoT Specialist",
+    title: "Co Founder |HardWare & IoT  Engineer | Project Manager",
     image: userImage,
   },
   {
     name: "Oli Dereje",
-    title: "Software Developer",
+    title: "Software Developer ",
     image: userImage,
   },
   {
     name: "Feven ",
-    title: "Software Developer",
+    title: "Software Engineer",
     image: userImage,
   },
 ];
