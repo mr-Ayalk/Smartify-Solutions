@@ -4,6 +4,7 @@ import userImage from "../assets/user.png";
 import lemi from "../assets/lemi.png";
 import ayalk from "../assets/ayalk.jpg";
 import bami from "../assets/bami.png";
+import eyosi from "../assets/eyosi.png";
 const teamData = [
   {
     name: "Lemi Negeso",
@@ -23,7 +24,7 @@ const teamData = [
   {
     name: "Eyosiyas Tiruneh",
     title: "Co Founder | HardWare Engineer | Project Organizer",
-    image: userImage,
+    image: eyosi,
   },
   {
     name: "Kenna Bayye",
